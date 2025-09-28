@@ -6,6 +6,11 @@
   place-items: center;
 }
 
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.20);
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -14,6 +19,7 @@
   padding: 1rem;
   border-radius: 2rem;
   border: 1px solid #cf2689;
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 
 .image {

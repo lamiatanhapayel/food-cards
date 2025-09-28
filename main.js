@@ -1,8 +1,3 @@
-let country = "";
-let container = document.querySelector(".container");
-let input = document.querySelector(".input");
-let button = document.querySelector(".btn");
-
 async function food() {
     let response = await fetch(
         `https://www.themealdb.com/api/json/v1/1/filter.php?a=${country}`);
@@ -34,6 +29,10 @@ async function food() {
     }
 }
 
+let country = "";
+let container = document.querySelector(".container");
+let input = document.querySelector(".input");
+let button = document.querySelector(".btn");
 
 button.addEventListener("click", () => {
   country = input.value.trim();
